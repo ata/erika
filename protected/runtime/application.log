@@ -1,0 +1,1205 @@
+2011/06/17 16:15:51 [error] [php] date() [<a href='function.date'>function.date</a>]: It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Jakarta' for 'WIT/7.0/no DST' instead (/home/ata/Project/po/protected/views/layouts/main.php:48)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CBaseController.php(88): SiteController->renderInternal()
+#1 /home/ata/Project/po/framework/web/widgets/CContentDecorator.php(78): SiteController->renderFile()
+#2 /home/ata/Project/po/framework/web/widgets/CContentDecorator.php(56): CContentDecorator->decorate()
+#3 /home/ata/Project/po/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#4 /home/ata/Project/po/framework/web/CBaseController.php(199): CContentDecorator->run()
+#5 /home/ata/Project/po/framework/web/CBaseController.php(294): SiteController->endWidget()
+#6 /home/ata/Project/po/protected/views/layouts/column1.php(7): SiteController->endContent()
+#7 /home/ata/Project/po/framework/web/CBaseController.php(119): require()
+#8 /home/ata/Project/po/framework/web/CBaseController.php(88): SiteController->renderInternal()
+#9 /home/ata/Project/po/framework/web/CController.php(781): SiteController->renderFile()
+#10 /home/ata/Project/po/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /home/ata/Project/po/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /home/ata/Project/po/framework/web/CController.php(300): CInlineAction->runWithParams()
+#13 /home/ata/Project/po/framework/web/CController.php(278): SiteController->runAction()
+#14 /home/ata/Project/po/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#15 /home/ata/Project/po/framework/web/CWebApplication.php(328): SiteController->run()
+#16 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#17 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#18 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/
+in /home/ata/Project/po/protected/views/layouts/main.php (48)
+in /home/ata/Project/po/protected/views/layouts/column1.php (7)
+in /home/ata/Project/po/protected/controllers/SiteController.php (32)
+2011/06/17 16:30:40 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/ata/Project/po/framework/YiiBase.php:396)
+Stack trace:
+#0 /home/ata/Project/po/protected/components/UserIdentity.php(18): spl_autoload_call()
+#1 /home/ata/Project/po/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#2 /home/ata/Project/po/framework/validators/CInlineValidator.php(39): LoginForm->authenticate()
+#3 /home/ata/Project/po/framework/validators/CValidator.php(192): CInlineValidator->validateAttribute()
+#4 /home/ata/Project/po/framework/base/CModel.php(152): CInlineValidator->validate()
+#5 /home/ata/Project/po/protected/controllers/SiteController.php(88): LoginForm->validate()
+#6 /home/ata/Project/po/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#7 /home/ata/Project/po/framework/web/CController.php(300): CInlineAction->runWithParams()
+#8 /home/ata/Project/po/framework/web/CController.php(278): SiteController->runAction()
+#9 /home/ata/Project/po/framework/web/CController.php(257): SiteController->runActionWithFilters()
+#10 /home/ata/Project/po/framework/web/CWebApplication.php(328): SiteController->run()
+#11 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#12 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#13 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php?r=site/login
+in /home/ata/Project/po/protected/components/UserIdentity.php (18)
+in /home/ata/Project/po/protected/models/LoginForm.php (52)
+in /home/ata/Project/po/protected/controllers/SiteController.php (88)
+2011/06/17 16:57:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ux/CheckColumn.js".' in /home/ata/Project/po/framework/web/CWebApplication.php:332
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('ux/CheckColumn....')
+#1 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#2 /home/ata/Project/po/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/Project/po/index.php/ux/CheckColumn.js?_dc=1308304635156
+2011/06/18 08:51:47 [error] [exception.CException] exception 'CException' with message 'Property "Po.ponumber" is not defined.' in /home/ata/Project/po/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ata/Project/po/framework/db/ar/CActiveRecord.php(128): CComponent->__get('ponumber')
+#1 /home/ata/Project/po/protected/models/Po.php(117): CActiveRecord->__get('ponumber')
+#2 /home/ata/Project/po/protected/controllers/PoController.php(22): Po->search()
+#3 /home/ata/Project/po/framework/web/actions/CInlineAction.php(50): PoController->actionList()
+#4 /home/ata/Project/po/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#5 /home/ata/Project/po/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#6 /home/ata/Project/po/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('list')
+#8 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/list')
+#9 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#10 /home/ata/Project/po/index.php(13): CApplication->run()
+#11 {main} REQUEST_URI=/Project/po/index.php/po/list?_dc=1308361907367&start=0&limit=20&page=1
+2011/06/18 08:57:36 [error] [exception.CException] exception 'CException' with message 'CActiveDataProvider does not have a method named "itemCount".' in /home/ata/Project/po/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/ata/Project/po/protected/controllers/PoController.php(24): CComponent->__call('itemCount', Array)
+#1 /home/ata/Project/po/protected/controllers/PoController.php(24): CActiveDataProvider->itemCount()
+#2 /home/ata/Project/po/framework/web/actions/CInlineAction.php(50): PoController->actionList()
+#3 /home/ata/Project/po/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/ata/Project/po/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#5 /home/ata/Project/po/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('list')
+#7 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/list')
+#8 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#9 /home/ata/Project/po/index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/Project/po/index.php/po/list?_dc=1308362256622&start=0&limit=20&page=1
+2011/06/20 22:00:12 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308582012813
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:00:26 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308582026793
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:01:31 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308582091278
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:02:08 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308582128395
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:05:01 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308582301918
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:05:54 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308582354208
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:17:51 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308583070928
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:24:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /home/ata/Project/po/framework/web/CController.php:477
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(262): CController->missingAction('view')
+#1 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('view')
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/view')
+#3 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /home/ata/Project/po/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Project/po/index.php/po/view?_dc=1308583457247&start=0&limit=25&page=1
+2011/06/20 22:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "destroy".' in /home/ata/Project/po/framework/web/CController.php:477
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(262): CController->missingAction('destroy')
+#1 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('destroy')
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/destroy')
+#3 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /home/ata/Project/po/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1308583526648
+2011/06/20 22:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in /home/ata/Project/po/framework/web/CController.php:477
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(262): CController->missingAction('update')
+#1 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('update')
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/update')
+#3 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /home/ata/Project/po/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Project/po/index.php/po/update?_dc=1308583537451
+2011/06/20 22:33:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in /home/ata/Project/po/framework/web/CController.php:477
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(262): CController->missingAction('create')
+#1 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('create')
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/create')
+#3 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /home/ata/Project/po/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Project/po/index.php/po/create?_dc=1308584029649
+2011/06/20 22:46:31 [error] [php] Undefined index: data (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308584790511
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:47:16 [error] [php] Undefined index: data (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308584836046
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/20 22:48:20 [error] [php] Undefined index: data (/home/ata/Project/po/protected/controllers/PoController.php:26)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308584900325
+in /home/ata/Project/po/protected/controllers/PoController.php (26)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 06:49:27 [error] [php] Undefined variable: data (/home/ata/Project/po/protected/controllers/PoController.php:47)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1308613767010
+in /home/ata/Project/po/protected/controllers/PoController.php (47)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 06:54:19 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308614059426
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 06:54:36 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308614076456
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 06:55:51 [error] [php] Undefined index: limit (/home/ata/Project/po/protected/controllers/PoController.php:15)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/list?_dc=1308614151354
+in /home/ata/Project/po/protected/controllers/PoController.php (15)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 06:56:53 [error] [php] Trying to get property of non-object (/home/ata/Project/po/protected/controllers/PoController.php:48)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1308614213434
+in /home/ata/Project/po/protected/controllers/PoController.php (48)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:09:18 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308614958556
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:09:51 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308614991905
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:13:39 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308615218984
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:13:52 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308615231951
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:14:55 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308615295648
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:16:00 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308615360374
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/21 07:20:26 [error] [exception.CException] exception 'CException' with message 'Property "CPhpAuthManager.db" is not defined.' in /home/ata/Project/po/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ata/Project/po/protected/modules/srbac/SrbacModule.php(244): CComponent->__get('db')
+#1 /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#2 /home/ata/Project/po/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#3 /home/ata/Project/po/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#4 /home/ata/Project/po/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('frontpage')
+#6 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('srbac/authitem/...')
+#7 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#8 /home/ata/Project/po/index.php(13): CApplication->run()
+#9 {main} REQUEST_URI=/Project/po/index.php/srbac/authitem/frontpage
+2011/06/21 07:21:30 [error] [exception.CException] exception 'CException' with message 'Property "CPhpAuthManager.db" is not defined.' in /home/ata/Project/po/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ata/Project/po/protected/modules/srbac/SrbacModule.php(244): CComponent->__get('db')
+#1 /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#2 /home/ata/Project/po/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#3 /home/ata/Project/po/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#4 /home/ata/Project/po/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('frontpage')
+#6 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('srbac/authitem/...')
+#7 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#8 /home/ata/Project/po/index.php(13): CApplication->run()
+#9 {main} REQUEST_URI=/Project/po/index.php/srbac/authitem/frontpage
+2011/06/21 07:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "srbac/install".' in /home/ata/Project/po/framework/web/CWebApplication.php:332
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('srbac/install')
+#1 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#2 /home/ata/Project/po/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/Project/po/index.php/srbac/install
+2011/06/21 07:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "install".' in /home/ata/Project/po/framework/web/CController.php:477
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(262): CController->missingAction('install')
+#1 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('install')
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('po/install')
+#3 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#4 /home/ata/Project/po/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/Project/po/index.php/po/install
+2011/06/21 07:23:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "srbac/install".' in /home/ata/Project/po/framework/web/CWebApplication.php:332
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('srbac/install')
+#1 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#2 /home/ata/Project/po/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/Project/po/index.php/srbac/install
+2011/06/21 07:23:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "srbac/install".' in /home/ata/Project/po/framework/web/CWebApplication.php:332
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('srbac/install')
+#1 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#2 /home/ata/Project/po/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/Project/po/index.php/srbac/install
+2011/06/21 07:24:16 [error] [exception.CException] exception 'CException' with message 'Property "CPhpAuthManager.db" is not defined.' in /home/ata/Project/po/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/ata/Project/po/protected/modules/srbac/SrbacModule.php(244): CComponent->__get('db')
+#1 /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php(43): SrbacModule->isInstalled()
+#2 /home/ata/Project/po/framework/web/CController.php(298): AuthitemController->beforeAction(Object(CInlineAction))
+#3 /home/ata/Project/po/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#4 /home/ata/Project/po/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/ata/Project/po/framework/web/CWebApplication.php(328): CController->run('install')
+#6 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController('srbac/authitem/...')
+#7 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#8 /home/ata/Project/po/index.php(13): CApplication->run()
+#9 {main} REQUEST_URI=/Project/po/index.php/srbac/authitem/install
+2011/06/21 07:25:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:25:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:32:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:32:21 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:32:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:50:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:50:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/21 07:50:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'po_dev.items' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `items`.
+in /home/ata/Project/po/protected/modules/srbac/models/AuthItem.php (40)
+in /home/ata/Project/po/protected/modules/srbac/SrbacModule.php (248)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (43)
+2011/06/24 08:47:20 [error] [php] Undefined index: User (/home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php:244)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(300): CInlineAction->runWithParams()
+#1 /home/ata/Project/po/framework/web/CController.php(278): AuthitemController->runAction()
+#2 /home/ata/Project/po/framework/web/CController.php(257): AuthitemController->runActionWithFilters()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(328): AuthitemController->run()
+#4 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#5 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#6 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/srbac/authitem/getRoles
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (244)
+in /home/ata/Project/po/protected/modules/srbac/controllers/AuthitemController.php (236)
+in /home/ata/Project/po/index.php (13)
+2011/06/24 08:50:30 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308880230879
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/24 08:50:35 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308880235011
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/24 08:50:39 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308880239044
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/24 08:51:24 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308880283936
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/24 08:51:30 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308880290849
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/24 08:51:32 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308880292713
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:45:06 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308962706624
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:46:08 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308962768662
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:53:07 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:56)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/update?_dc=1308963187418
+in /home/ata/Project/po/protected/controllers/PoController.php (56)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:53:17 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (57)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:54:00 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:56)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/update?_dc=1308963240816
+in /home/ata/Project/po/protected/controllers/PoController.php (56)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:55:22 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (57)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:56:56 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963415919
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:02 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963422926
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:11 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963431552
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:16 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963436671
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:20 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963439962
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:27 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963447901
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:31 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963451448
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:36 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963456402
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:57:38 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963458235
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 07:58:12 [error] [php] Creating default object from empty value (/home/ata/Project/po/protected/controllers/PoController.php:27)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1308963492844
+in /home/ata/Project/po/protected/controllers/PoController.php (27)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:02:34 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:02:43 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:02:48 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:02:56 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:14 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:20 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:23 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:23 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:28 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:28 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:31 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:31 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:36 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:36 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:41 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:03:41 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:16:47 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:18:31 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:21:42 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:24:41 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:29:45 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:35:14 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:35:17 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:35:18 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:35:31 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:37:02 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:37:03 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:37:05 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:37:10 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:37:17 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:39:22 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:39:25 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:39:27 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:40:32 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:40:39 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:40:51 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:40:58 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:41:10 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:41:12 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:41:27 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:41:43 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 08:42:02 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:09 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:19 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:23 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:29 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:32 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:32 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:34 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:34 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:36 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:15:36 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:16:05 [warning] [application] Failed to set unsafe attribute "0".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/25 09:16:05 [warning] [application] Failed to set unsafe attribute "1".
+in /home/ata/Project/po/protected/controllers/PoController.php (29)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:45:53 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:46:06 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309319166765
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:46:35 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:44 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:46 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:51 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:53 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:53 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:57 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:52:57 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:57:21 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:57:25 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 10:57:31 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:04:44 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:04:44 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:06:06 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:11:06 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:11:06 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:20:23 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:20:23 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 11:49:25 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:27:00 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:27:12 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:65)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/update?_dc=1309325232295
+in /home/ata/Project/po/protected/controllers/PoController.php (65)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:28:16 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:28:41 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:65)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/update?_dc=1309325321276
+in /home/ata/Project/po/protected/controllers/PoController.php (65)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:04 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:29 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:30 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:31 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:32 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:33 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:34 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:40 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:41 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:48 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:49 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:52 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:52 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:58 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:29:59 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:03 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:04 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:06 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:06 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:08 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:09 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:18 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:19 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:26 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:27 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:30 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:31 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:43 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:44 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:46 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:47 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:55 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:30:56 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:22 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:24 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:25 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:27 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:32 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:36 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:38 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:54 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:57 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:31:58 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:05 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:11 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:15 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:19 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:22 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:26 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:31 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:35 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:39 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:43 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:44 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:47 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:32:57 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:33:02 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:33:06 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:33:09 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:33:15 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 12:33:17 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:39 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:39 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:42 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:42 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:45 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:45 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:58:57 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309334337870
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:59:00 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309334340242
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:59:01 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309334341103
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:59:01 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309334341797
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:59:04 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309334344757
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 14:59:08 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:28)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/create?_dc=1309334348133
+in /home/ata/Project/po/protected/controllers/PoController.php (28)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 16:03:15 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (66)
+in /home/ata/Project/po/index.php (13)
