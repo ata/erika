@@ -25,9 +25,6 @@ class PoController extends Controller
 	{
 		$input = $this->getDataInput();
 		$data = $input['data'];
-		if (isset($input[$data['id']])) {
-
-		}
 		$po = new Po();
 		$po->attributes = $input['data'];
 		if($po->save()){

@@ -1203,3 +1203,62 @@ in /home/ata/Project/po/index.php (13)
 2011/06/29 16:03:15 [warning] [application] Failed to set unsafe attribute "id".
 in /home/ata/Project/po/protected/controllers/PoController.php (66)
 in /home/ata/Project/po/index.php (13)
+2011/06/29 21:54:11 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 21:54:11 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (32)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:41:33 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:52)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1309362093639
+in /home/ata/Project/po/protected/controllers/PoController.php (52)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:41:34 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:52)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1309362094116
+in /home/ata/Project/po/protected/controllers/PoController.php (52)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:41:34 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:52)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1309362094510
+in /home/ata/Project/po/protected/controllers/PoController.php (52)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:41:35 [error] [php] Undefined index: id (/home/ata/Project/po/protected/controllers/PoController.php:52)
+Stack trace:
+#0 /home/ata/Project/po/framework/web/CController.php(278): PoController->runAction()
+#1 /home/ata/Project/po/framework/web/CController.php(257): PoController->runActionWithFilters()
+#2 /home/ata/Project/po/framework/web/CWebApplication.php(328): PoController->run()
+#3 /home/ata/Project/po/framework/web/CWebApplication.php(121): CWebApplication->runController()
+#4 /home/ata/Project/po/framework/base/CApplication.php(155): CWebApplication->processRequest()
+#5 /home/ata/Project/po/index.php(13): CWebApplication->run()
+REQUEST_URI=/Project/po/index.php/po/destroy?_dc=1309362094916
+in /home/ata/Project/po/protected/controllers/PoController.php (52)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:43:53 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (31)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:43:57 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (31)
+in /home/ata/Project/po/index.php (13)
+2011/06/29 22:44:00 [warning] [application] Failed to set unsafe attribute "id".
+in /home/ata/Project/po/protected/controllers/PoController.php (31)
+in /home/ata/Project/po/index.php (13)
